@@ -1,70 +1,54 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 0 50px;
+.intro {
+  background: #eaf0f1;
 }
-
-.alert {
-  max-width: 50%;
+h1 {
+  color: #4c4b4b;
+  font-weight: bold;
+  transition: 0.5s;
 }
-
-.alert h1 {
-  font-size: 2rem;
-  color: red;
+h3 {
+  color: #2f363f;
 }
-
-.alert p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: white;
-}
-
-.login-form {
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 400px;
-}
-
-.login-form h2 {
-  margin: 0;
-}
-
-.login-form h3 {
-  margin: 10px 0 20px;
-}
-
-.login-form input {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: blue;
-  color: white;
+button {
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 10px;
+  background: #7b8788;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: 0.5s;
 }
-
-.login-form button:hover {
-  background-color: darkblue;
+button:hover,
+h1:hover {
+  transform: scale(1.1);
+}
+button:hover {
+  background-color: #4c4b4b;
+}
+footer {
+  color: #586776;
+  background-color: #eaf0f1;
+  letter-spacing: 0.5px;
+}
+footer p {
+  margin: 0;
+  font-size: 15px;
+}
+@media only screen and (orientation: portrait) {
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .act {
+    padding-bottom: 100px;
+  }
 }
